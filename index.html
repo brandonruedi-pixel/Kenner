@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Image</title>
-
 <style>
 body{
 margin:0;
@@ -12,37 +10,14 @@ display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-overflow:hidden;
 }
-
 img{
-width:100vw;
-height:100vh;
-object-fit:contain;
-}
-
-/* message if phone is vertical */
-.rotate{
-position:absolute;
-color:white;
-font-size:22px;
-text-align:center;
-display:none;
-}
-
-@media (orientation: portrait){
-.rotate{
-display:block;
-}
+max-width:100%;
+max-height:100%;
 }
 </style>
 </head>
-
 <body>
-
-<div class="rotate">Rotate phone for widescreen</div>
-
 <img src="Kenner.jpg">
-
 </body>
 </html>
